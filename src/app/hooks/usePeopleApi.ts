@@ -36,7 +36,7 @@ export const usePeopleApi = () => {
 
     useEffect(() => {
         fetchData()
-    })
+    }, [])
     
     return {currentPerson, personHistory, loading, error, fetchData}
 }
